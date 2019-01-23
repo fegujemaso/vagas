@@ -29,8 +29,11 @@ Mas chega disso, vamos ao que interessa: o deploy! Vou passar as instruções pa
 Seguindo o mesmo passo do Build (acessar o prompt na pasta onde a .sln está localizada), os comandos de deploy para as plataformas são as seguintes:
 
 Windows (8+): ```dotnet publish -c Release --r win7-x64 /property:PublishWithAspNetCoreTargetManifest=false```
+
 Windows ARM: ```dotnet publish -c Release -r win8-arm /property:PublishWithAspNetCoreTargetManifest=false```
+
 Linux x64: ```dotnet publish -c Release -r linux-x64 /property:PublishWithAspNetCoreTargetManifest=false```
+
 Linux ARM: ```dotnet publish -c Release -r linux-arm /property:PublishWithAspNetCoreTargetManifest=false```
 
 Após a execução do comando desejado, os arquivos do projeto estarão prontos para a execução no diretório ```Vagas.Recrutamento.Teste\bin\Release\netcoreapp2.2\win7-x64\publish```, porém com algumas particularidades.
