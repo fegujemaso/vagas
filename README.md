@@ -1,3 +1,4 @@
-# vagas
-Repositório criado para disponibilizar projeto de teste.
-sdsd
+# Desafio para Engenheiro(a) de Software - VAGAS.com
+Repositório criado para disponibilizar o projeto para análise.
+
+
