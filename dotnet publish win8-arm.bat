@@ -1,0 +1,1 @@
+dotnet publish -c Release -r win8-arm /property:PublishWithAspNetCoreTargetManifest=false

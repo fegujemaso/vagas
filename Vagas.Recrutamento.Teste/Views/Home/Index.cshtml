@@ -1,0 +1,92 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <a href="javascript:;" onclick="TestarVagaApi();">Testar Vaga API</a><br />
+        <a href="javascript:;" onclick="TestarPessoaApi();">Testar Pessoa API</a><br />
+        <a href="javascript:;" onclick="TestarCandidaturaApi();">Testar Candidatura API</a><br />
+        <a href="javascript:;" onclick="TestarRankingApi(1);">Testar Ranking API</a>
+    </div>
+
+    <script src="~/jquery/2.1.1/js/jquery.js"></script>
+    <script src="~/jquery-ui/1.12.1/js/jquery-ui.js"></script>
+    <script src="~/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <script src="~/main/1.0.0/js/auxiliar.js"></script>
+    <script type="text/javascript">
+        function TestarVagaApi() {
+            var jsonParametro = {
+                'empresa': 'Teste',
+                'titulo': 'Vaga teste',
+                'descricao': 'Criar os mais diferentes tipos de teste',
+                'localizacao': 'A',
+                'nivel': 3
+            };
+
+            return AjaxPostRequestAsync('/v1/vagas', JSON.stringify(jsonParametro), ResponseTestarVagaApi);
+        }
+
+        function ResponseTestarVagaApi(data) {
+            var jsonObject = ProcessarResponseJson(data);
+
+            if (jsonObject == null) return;
+
+            alert(JSON.stringify(jsonObject));
+        }
+
+        function TestarPessoaApi() {
+            var jsonParametro = {
+                'nome': 'John Doe',
+                'profissao': 'Engenheiro de Software',
+                'localizacao': 'F',
+                'nivel': 2
+            };
+
+            return AjaxPostRequestAsync('/v1/pessoas', JSON.stringify(jsonParametro), ResponseTestarPessoaApi);
+        }
+
+        function ResponseTestarPessoaApi(data) {
+            var jsonObject = ProcessarResponseJson(data);
+
+            if (jsonObject == null) return;
+
+            alert(JSON.stringify(jsonObject));
+        }
+
+        function TestarCandidaturaApi() {
+            var jsonParametro = {
+                'id_vaga': 1,
+                'id_pessoa': 1
+            };
+
+            return AjaxPostRequestAsync('/v1/candidaturas', JSON.stringify(jsonParametro), ResponseTestarCandidaturaApi);
+        }
+
+        function ResponseTestarCandidaturaApi(data) {
+            var jsonObject = ProcessarResponseJson(data);
+
+            if (jsonObject == null) return;
+
+            alert(JSON.stringify(jsonObject));
+        }
+
+        function TestarRankingApi(vagaId) {
+            return AjaxGetRequestAsync('/v1/vagas/' + vagaId + '/candidaturas/ranking', ResponseTestarRankingApi);
+        }
+
+        function ResponseTestarRankingApi(data) {
+            var jsonObject = ProcessarResponseJson(data);
+
+            if (jsonObject == null) return;
+
+            alert(JSON.stringify(jsonObject));
+        }
+    </script>
+</body>
+</html>

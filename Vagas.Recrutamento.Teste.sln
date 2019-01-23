@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vagas.Recrutamento.Teste", "Vagas.Recrutamento.Teste\Vagas.Recrutamento.Teste.csproj", "{A6AD7894-18AB-4128-8DC0-FEF6C551D2C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vagas.Recrutamento.Core", "Vagas.Recrutamento.Core\Vagas.Recrutamento.Core.csproj", "{BB3D0A21-708F-427C-A2FF-383BE7F81680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vagas.Database", "Vagas.Database\Vagas.Database.csproj", "{53F0FF39-6957-4590-A594-E1BB7A4F5E5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6AD7894-18AB-4128-8DC0-FEF6C551D2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6AD7894-18AB-4128-8DC0-FEF6C551D2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6AD7894-18AB-4128-8DC0-FEF6C551D2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6AD7894-18AB-4128-8DC0-FEF6C551D2C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB3D0A21-708F-427C-A2FF-383BE7F81680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3D0A21-708F-427C-A2FF-383BE7F81680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3D0A21-708F-427C-A2FF-383BE7F81680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3D0A21-708F-427C-A2FF-383BE7F81680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F0FF39-6957-4590-A594-E1BB7A4F5E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F0FF39-6957-4590-A594-E1BB7A4F5E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F0FF39-6957-4590-A594-E1BB7A4F5E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F0FF39-6957-4590-A594-E1BB7A4F5E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3994EAFE-AEB8-49CE-9988-5FD21308B11D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mentecriativa.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Vagas.Database\\Vagas.Database.csproj
+		SccProjectName1 = Vagas.Database
+		SccLocalPath1 = Vagas.Database
+		SccProjectUniqueName2 = Vagas.Recrutamento.Core\\Vagas.Recrutamento.Core.csproj
+		SccProjectName2 = Vagas.Recrutamento.Core
+		SccLocalPath2 = Vagas.Recrutamento.Core
+		SccProjectUniqueName3 = Vagas.Recrutamento.Teste\\Vagas.Recrutamento.Teste.csproj
+		SccProjectName3 = Vagas.Recrutamento.Teste
+		SccLocalPath3 = Vagas.Recrutamento.Teste
+	EndGlobalSection
+EndGlobal
