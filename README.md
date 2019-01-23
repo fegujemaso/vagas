@@ -41,4 +41,7 @@ Após a execução do comando desejado, os arquivos do projeto estarão prontos 
 # Execução
 Após todos esses procedimentos (nem foi tão dificil, vai), a execução do projeto abre um listener na posta 5000 (definido por padrão na criação do projeto) e é possível consumir os endpoints solicitados no projeto (http://url:5000/v1/[...]).
 
+# Adendo
+Existem alguns arquivos .bat na raiz do projeto com o nome auto explicativo. Fiz para poupar tempo a vocês ;)
+
 Se houver qualquer problema, por favor, me avise.
